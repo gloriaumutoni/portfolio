@@ -122,14 +122,12 @@ display:flex;
 flex-direction:column;
 text-align:justify;
 padding-left:20px;
-/* padding-top:90px; */
-/* gap:40px; */
 }
 
 #intro h2{
     font-size:2rem;
     padding-bottom: 60px;
-    /* margin-bottom: 20px; */
+   
 }
 
       /* Portifolio section */
@@ -155,14 +153,38 @@ padding-left:20px;
    margin:10px;
    position: relative;
 }
-/* .overlay1{
-width: 100%;
-height: 100%;
-background: linear-gradient(rgba(0,0,0,0.6),#ff004f);
-border-radius:10px;
+.container{
+    width: 40%;
+    height: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 0 10px 20px rgb(40,40,40);
+}
+
+/* .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+    background: balck;
+    cursor: pointer;
+}
+.content{
 position: absolute;
-left: 0;
-bottom: hidden;
+top: 50%;
+left: 50%;
+transform:translate(-50%,-50%);
+color: white;
+font-family: verdana;
+text-align: center;
+}
+.container:hover .overlay{
+    opacity:0.8 ;
 } */
 
 /* Services section */
@@ -327,228 +349,139 @@ transition:all .8s;
     }
 }
 @media screen and (max-width:395px){
+    html{
+        height: 240rem;
+    }
     .navbar ul{
 align-items: start;
     }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* @media screen and (max-width:768px){
-    html{
-        height: 264rem;
-     }
-     body{
-        width: 100%;
-     }
-    #home{
-        padding-left: 3px;
-       
-    }
-    .main {
-        font-size: 24px;
-        padding-top: 30px;
-    }
-    .btn {
-        margin-right: 100px;
-        margin-bottom: 1px;
-    }
     .headings{
-        font-size: 30px;
-        padding-top: 10px;
-        margin-right: 100px;
+        font-size: 20px;
     }
-   #pic{
-    padding-left: 2px;
-   } 
-   #pic img{
-    margin-top: 45px;
-width: 220px;
-height: 270px;
-   }
-#intro{
-    padding-top: 1px;
-   
-    padding-left:3px;
-}
-#intro h2{
-    font-size: 18px; 
-    padding-bottom: 10px;
-}
-#intro p{
-    font-size: 10px;
-    width: 100px;
-    
-}
-#services{
-    display: flex;
-    flex-wrap: wrap;
-    padding-left: 2px;
-}
-}
-@media screen and (max-width:830px){
-    html{
-        height: 223rem;
-     }
-    #home{
-        padding-left: 3px;
-        width:100%;
+    #pic img{
+        width: 280px;
+        height: 240px;
     }
-    .main{
-        padding-top: 30px;
-        padding-left: 200px;
+    #intro h2{
+        font-size: 18px;
     }
-    .headings{
-        font-size: 30px;
-        padding-top: 10px;
-    }
-   #pic{
-    padding-left: 2px;
-   } 
-   #pic img{
-    margin-top: 45px;
-width: 320px;
-height: 270px;
-   }
-#intro{
-    padding-top: 1px;
-    gap: 6px;
-    padding-left:40px;
-}
-#intro h2{
-    font-size: 18px; 
-    padding-bottom: 10px;
-}
-#intro p{
-    font-size: 13px;
-    width: 300px;
-    padding-top: 1px;
-}
-#services{
-    display: flex;
-    flex-wrap: wrap;
-    padding-left: 2px;
-}
-}
-@media screen and (max-width:930px){
-    html{
-        height: 230rem;
-     }
-    
-     .navbar ul li a{
+    #intro p{
         font-size: 14px;
-       padding-left: 1px;
-     }
-    #home{
-        padding-left: 3px;
-      
+        width: 300px;
     }
-    .headings{
-        font-size: 30px;
-        padding-top: 10px;
+    .box{
+        width: 300px;
+        height:400px ;
     }
+    .box img{
+        height: 50px;
+    }
+    .box p{
+font-size: 14px;
+    }
+    .box h2{
+font-size: 24px;
+    }
+     .input{
+       font-size: 12px;
+       width: 300px;
+    }
+    #msg{
+        width: 190px;
+    }
+}
+@media screen and (max-width:415px){
    #pic img{
-    margin-top: 45px;
-width: 420px;
-height: 370px;
+    width: 350px;
+    height: 320px;
    }
-#intro{
-    padding-top: 1px;
-    gap: 6px;
-    padding-left:40px;
-}
-#intro h2{
-    font-size: 20px; 
-    padding-bottom: 10px;
-    padding-top: 30px;
-}
-#intro p{
-    font-size: 15px;
-    width: 400px;
-    padding-top: 14px;
-}
-#services{
-    display: flex;
-    flex-wrap: wrap;
-    padding-left: 2px;
-}
+    #intro p{
+        width: 400px;
+        font-size: 13px;
+    }
 }
 @media screen and (max-width:390px){
-html{
-    height: 313rem;
+    #intro p{
+        width: 350px;
+    }
 }
-    .navbar{
-   
-    width: 42.2rem;
+@media screen and (max-width:393px){
+    #intro p{
+        width: 340px;
+    }
 }
-#home{
-    width: 100%; 
-    width: 42.2rem;
+@media screen and (max-width:360px){
+    #pic img{
+        width: 330px;
+    }
+    #intro p{
+        width: 330px;
+        padding-right: 2px;
+    }
 }
-.main{
-    width: 35rem;
-    
+@media screen and (max-width:412px){
+    #intro p{
+        width: 340px;
+    }
+    #msg{
+width: 300px;
+    }
 }
-.main button{
-    font-size: 19px;
+@media screen and (max-width:912px){
+    html{
+        height: 288rem;
+    }
 }
-.headings{
-    margin-left: 10rem;
-    width: 20rem;
+@media screen and (max-width:720px){
+    #intro p{
+        width: 500px;
+    }
 }
-#pic img{
-    padding-top: 12px;
-    width: 20rem;
-    height: 22rem;
-}
-#intro{
-    padding-left: 10px;
-}
-#intro h2{
-font-size: 20px;
-width: 200px;
-}
-#intro p{
-    width: 19rem;
-    font-size: 14px;
-}
-.gallery{
-    margin-left: 16rem;
-}
-.box{
-    margin-left: 10rem;
-}
-.box .headings{
-    margin-right: 10rem;
-    font-size: 30px;
+@media screen and (max-width:280px){
+   html{
+    height: 210rem;
+   }
+    #pic img{
+        width: 250px;
+        height: 220px;
+    }
+    #intro p{
+        width: 260px;
+    }
+    .input{
+        width: 250px;
+    }
+    #msg{
+        width: 200px;
+    }
 }
 
-}
- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

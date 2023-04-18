@@ -55,7 +55,7 @@ transition:all .5s ease;
     position:absolute;
     top:0;
     right:0;
-    background:url("/8ca38c9d-9179-4ba5-951b-2c9b8ac100d1.jpg") no-repeat center center/ cover;
+    background:url("./img.jpg") no-repeat center center/ cover;
 height:900px;
 width:100%;
 z-index:-1;
